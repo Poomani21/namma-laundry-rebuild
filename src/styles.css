@@ -208,7 +208,8 @@ html { scroll-behavior: smooth; }
 
 .offers { position: relative; width: min(100% - 64px, 1440px); min-height: 142px; margin: 0 auto 22px; padding: 15px 53px 16px 278px; border: 1px solid var(--laundry-gold); border-radius: 18px; background: var(--laundry-deep); }
 .offers-title { position: absolute; inset: 21px auto auto 18px; display: flex; gap: 14px; align-items: center; }
-.offers-title .gift { font-size: 41px; }
+.offers-title .gift { color: var(--laundry-gold); }
+.offers-title .gift svg { width: 41px; height: 41px; }
 .offers-title h2 { font: 700 25px/1 var(--font-display); }
 .offers-title p { margin-top: 5px; font-size: 12px; }
 .offers-button { display: none; }
@@ -225,7 +226,7 @@ html { scroll-behavior: smooth; }
 .dots i { width: 8px; height: 8px; border-radius: 50%; background: var(--laundry-cream); }
 .dots i:first-child { background: var(--laundry-gold); }
 
-.action-row { width: min(100% - 64px, 1440px); margin: 28px auto 0; display: grid; grid-template-columns: 220px 240px 240px 1fr; gap: 12px; }
+.action-row { width: min(100% - 64px, 1440px); margin: 28px auto 0; display: grid; grid-template-columns: 190px 220px 220px minmax(0, 1fr); gap: 12px; }
 .action-row > .gold-button { height: 66px; font-size: 19px; }
 .action-row > .gold-button svg { width: 26px; height: 26px; }
 .whatsapp-icon { width: 28px; height: 28px; display: grid; place-items: center; border: 2px solid currentColor; border-radius: 50%; font-size: 20px; }

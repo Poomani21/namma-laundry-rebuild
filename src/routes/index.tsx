@@ -7,6 +7,7 @@ import {
   ChevronLeft,
   ChevronRight,
   Heart,
+  Gift,
   MapPin,
   Menu,
   Phone,
@@ -146,7 +147,7 @@ function Index() {
 
       <section className="offers" id="offers">
         <div className="offers-title">
-          <span className="gift" aria-hidden="true">🎁</span>
+          <span className="gift" aria-hidden="true"><Gift /></span>
           <div><h2>Exciting<br className="desktop-break" /> Offers for You!</h2><p>Great Care. Greater Savings.</p></div>
           <Button asChild className="gold-button offers-button"><a href="#offers">View All Offers <ChevronRight /></a></Button>
         </div>
