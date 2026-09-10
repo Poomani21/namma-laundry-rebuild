@@ -7,7 +7,6 @@ import {
   ChevronLeft,
   ChevronRight,
   Heart,
-  Iron,
   MapPin,
   Menu,
   Phone,
@@ -15,6 +14,7 @@ import {
   Shirt,
   Sparkles,
   WashingMachine,
+  Wind,
   X,
 } from "lucide-react";
 import { useState } from "react";
@@ -51,7 +51,7 @@ export const Route = createFileRoute("/")({
 const services = [
   { title: "Wash & Fold", detail: "Clean · Fresh · Ready to Use", image: towelsImage, icon: Shirt },
   { title: "Wash & Iron", detail: "Cleaned · Ironed · Perfectly Folded", image: shirtsImage, icon: WashingMachine },
-  { title: "Steam Ironing", detail: "Crisp · Smooth · Professional Finish", image: ironImage, icon: Iron },
+  { title: "Steam Ironing", detail: "Crisp · Smooth · Professional Finish", image: ironImage, icon: Wind },
   { title: "Dry Cleaning", detail: "Gentle Care · For Every Fabric", image: suitImage, icon: Shirt },
 ];
 
