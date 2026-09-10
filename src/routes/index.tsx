@@ -2,18 +2,21 @@ import { createFileRoute } from "@tanstack/react-router";
 import {
   Award,
   Calculator,
-  CalendarDays,
+  CalendarCheck2,
   ChevronDown,
   ChevronLeft,
   ChevronRight,
+  Coins,
   Heart,
   Gift,
   MapPin,
   Menu,
   Phone,
+  Quote,
   ShieldCheck,
   Shirt,
   Sparkles,
+  Star,
   WashingMachine,
   Wind,
   X,
@@ -95,7 +98,7 @@ function Index() {
             <a href="#contact">Contact</a>
           </nav>
           <Button asChild className="gold-button header-cta">
-            <a href="#estimate"><CalendarDays />Schedule Pickup</a>
+            <a href="#estimate"><CalendarCheck2 />Schedule Pickup</a>
           </Button>
           <Button
             variant="ghost"
@@ -130,7 +133,7 @@ function Index() {
         <div className="trust-row">
           <div><Award /><p><strong>10+ Years</strong><span>In Your Service</span></p></div>
           <div><ShieldCheck /><p><strong>Professional</strong><span>Care &amp; Expertise</span></p></div>
-          <div><Sparkles /><p><strong>Affordable</strong><span>Premium Quality</span></p></div>
+          <div><Coins /><p><strong>Affordable</strong><span>Premium Quality</span></p></div>
           <div><Heart /><p><strong>People's Favourite</strong><span>Trusted by Thousands</span></p></div>
         </div>
       </section>
@@ -176,9 +179,22 @@ function Index() {
         </div>
       </section>
 
-      <section className="testimonial-peek" aria-label="Customer testimonials">
-        <ChevronDown />
-        <div><span /><h2>What Our Customers Say</h2><span /></div>
+      <section className="testimonials" aria-label="Customer testimonials">
+        <ChevronDown className="testimonial-cue" aria-hidden="true" />
+        <div className="testimonial-heading"><span /><div><h2>What Our Customers Say</h2><p>Real People. Real Experiences.</p></div><span /></div>
+        <div className="testimonial-carousel">
+          <Button variant="secondary" size="icon" className="testimonial-arrow" aria-label="Previous review"><ChevronLeft /></Button>
+          <article className="review-card">
+            <Quote aria-hidden="true" />
+            <div>
+              <p>Excellent service! My clothes always come back<br className="review-break" /> spotless and fresh. Highly recommended!</p>
+              <div className="review-meta"><span className="review-stars" aria-label="5 out of 5 stars">{[0, 1, 2, 3, 4].map((star) => <Star key={star} />)}</span><strong>– Priya S.</strong></div>
+            </div>
+          </article>
+          <Button variant="secondary" size="icon" className="testimonial-arrow" aria-label="Next review"><ChevronRight /></Button>
+        </div>
+        <div className="review-dots" aria-hidden="true"><i /><i /><i /><i /></div>
+        <div className="customer-trust"><span /><Heart aria-hidden="true" /><span /><h3>Trusted by Hundreds of Happy Customers</h3></div>
       </section>
     </main>
   );
